@@ -1,7 +1,7 @@
 version: '3'
 services:
 
-  #sonar-codequality-collector:
+  # sonar-codequality-collector:
   #  environment:
   #  - SONAR_URL=http://192.168.99.101:9000
   #  - SONAR_CRON=0 * * * * *
