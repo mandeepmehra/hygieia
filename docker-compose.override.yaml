@@ -12,9 +12,9 @@ services:
 
   db:
     environment: 
-    - HYGIEIA_DB: dashboarddb
-    - HYGIEIA_DB_USER: dashboarduser
-    - HYGIEIA_DB_PWD: dbpassword
+     - HYGIEIA_DB=dashboarddb
+     - HYGIEIA_DB_USER=dashboarduser
+     - HYGIEIA_DB_PWD=dbpassword
   api:
     environment: 
     - KEY=gwv3PTFoJbyYGjKzpz3gAQgcXr8cdZQ+
