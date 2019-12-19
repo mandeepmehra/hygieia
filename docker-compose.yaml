@@ -7,8 +7,13 @@ services:
     image: mongo:latest
     ports:
       - "27017:27017"
+    environment: 
+      HYGIEIA_DB: dashboarddb
+      HYGIEIA_DB_USER: dashboarduser
+      HYGIEIA_DB_PWD: dbpassword
     volumes:
-      - "/apps/hygieia/datadir:/data/db"
+      - "./datadir:/data/db"
+      - "./resources/init-mongo.sh:/docker-entrypoint-initdb.d/init-mongo.sh"
   api:
     image: mandeepmehra/hygieia-api
     depends_on:

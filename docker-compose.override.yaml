@@ -1,15 +1,14 @@
 version: '3'
 services:
 
-  sonar-codequality-collector:
-    environment:
-    - SONAR_URL=http://192.168.99.101:9000
-    - SONAR_CRON=0 * * * * *
-    - SONAR_USERNAME=admin
-    - SONAR_PASSWORD=admin
-    - SONAR_VERSION=6.7
-    - SONAR_METRICS=ncloc,violations,new_vulnerabilities,critical_violations,major_violations,blocker_violations,tests,test_success_density,test_errors,test_failures,coverage,line_coverage,sqale_i
- ndex,alert_status,quality_gate_details
+  #sonar-codequality-collector:
+  #  environment:
+  #  - SONAR_URL=http://192.168.99.101:9000
+  #  - SONAR_CRON=0 * * * * *
+  #  - SONAR_USERNAME=admin
+  #  - SONAR_PASSWORD=admin
+  #  - SONAR_VERSION=6.7
+  #  - SONAR_METRICS=ncloc,violations,new_vulnerabilities,critical_violations,major_violations,blocker_violations,tests,test_success_density,test_errors,test_failures,coverage,line_coverage,sqale_index,alert_status,quality_gate_details
 
   api:
     environment: 
