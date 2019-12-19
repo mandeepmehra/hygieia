@@ -10,6 +10,11 @@ services:
   #  - SONAR_VERSION=6.7
   #  - SONAR_METRICS=ncloc,violations,new_vulnerabilities,critical_violations,major_violations,blocker_violations,tests,test_success_density,test_errors,test_failures,coverage,line_coverage,sqale_index,alert_status,quality_gate_details
 
+  db:
+    environment: 
+    - HYGIEIA_DB: dashboarddb
+    - HYGIEIA_DB_USER: dashboarduser
+    - HYGIEIA_DB_PWD: dbpassword
   api:
     environment: 
     - KEY=gwv3PTFoJbyYGjKzpz3gAQgcXr8cdZQ+
