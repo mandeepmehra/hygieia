@@ -1,4 +1,4 @@
-# Docker compose setup of hygieia
+# Docker compose setup of Hygieia CI Dashboard by CapitalOne
 
 This repo contains docker-compose.yaml to setup Hygieia CI dashboard with 2 connectors
 * Jenkins Connector
